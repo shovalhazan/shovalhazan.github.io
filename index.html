@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lanf="en">
+<div class="text-center" style="width:800px; margin:0 auto;">
+    <h1 class="display-4" style="font-family:Snap ITC">Memory Game</h1>
+    <h2 id="player_name"></h2>
+    <h4>This game score : </h4>
+    <h4 id="current_score">0</h4>
+    <h4>Total wins: </h4>
+    <h4 id="total_wins">0</h4>
+
+    <head>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="icon" type="image/gif" href="favicon/animated_favicon1.gif">
+
+        <meta charset="UTF-8">
+
+
+        <link rel="stylesheet" href="mystyle.css">
+        <script src="game_script.js">
+        </script>
+        <script>
+            var playerName = get_player_name()
+        </script>
+        <script src="json_scripts.js">
+        </script>
+        <script>
+            console.log(playerName)
+            writeNewPlayer(playerName)
+        </script>
+
+
+    </head>
+
+    <body>
+        <script src="board_scripts.js"></script>
+        <label for="cars">board size:</label>
+
+
+        <select id="select">
+            <option value=4>4</option>v
+        </select>
+
+        <button id="btn_new_game" onclick="startNewGame()">New Game</button>
+        <section class="game">
+            <script>
+                console.log(parseInt(document.getElementById("select").value))
+                createBoard(4)
+            </script>
+        </section>
+        <script src="card_scripts.js"></script>
+    </body>
+</div>
+
+</html>
